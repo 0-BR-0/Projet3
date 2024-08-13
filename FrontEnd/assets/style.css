@@ -125,6 +125,32 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
+#filtre {
+    display: flex;
+    gap: 15px;
+	margin-bottom: 30px;
+	justify-content: center;
+
+}
+.bouton-tous, .bouton-objets, .bouton-appartements, .bouton-hotels-restautants {
+    padding: 9px 15px;
+    background-color: white;
+    border: solid #1D6154;
+    border-radius: 25px;
+    display: flex;
+	color: #1D6154;
+	font: inherit;
+	font-weight: bold;
+	border-width: 1px;
+
+
+}
+.bouton-tous:hover, .bouton-objets:hover, .bouton-appartements:hover, .bouton-hotels-restautants:hover {
+	cursor: pointer;
+	background-color: #1D6154;
+	color: white;
+
+}
 .gallery {
 	width: 100%;
 	display: grid;
