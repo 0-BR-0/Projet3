@@ -7,9 +7,12 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
-	<script src="script/script.js"> defer</script>
+	<script src="script/script.js" defer> </script>
 </head>
 <body>
 <header>
@@ -18,7 +21,7 @@
 		<ul>
 			<li>projets</li>
 			<li>contact</li>
-			<li>login</li>
+			<a id = "LienLogin" class="LienLogin" href="login.html"> login </a>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -37,11 +40,14 @@
 	</section>
 	<section id="portfolio">
 		<h2>Mes Projets</h2>
+		<!-- <button id="btnModifier">
+			<i id= "iconeBtnModifier" class="fa-regular fa-pen-to-square fa-sm"></i>modifier
+		</button> -->
 		<div id="filtre">
-			<button id="bouton-tous" class="bouton-tous" type="button">Tous</button>
-			<button class="bouton-objets" type="submit">Objets</button>
-			<button class="bouton-appartements" type="submit">Appartements</button>
-			<button class="bouton-hotels-restautants" type="submit">Hotels & restautants</button>
+			<button id="bouton-filtre-active" class="bouton-tous" type="button">Tous</button>
+			<button id="" class="bouton-objets" type="submit">Objets</button>
+			<button id="" class="bouton-appartements" type="submit">Appartements</button>
+			<button id="" class="bouton-hotels-restaurants" type="submit">Hotels & restautants</button>
 		</div>
 		<div id="gallery" class="gallery">
 			<!-- <figure>
@@ -89,7 +95,43 @@
 				<figcaption>Hotel First Arte - New Delhi</figcaption>
 			</figure> -->
 		</div>
-	</section>
+		<aside id="modale" class="modale" style="display: none;">
+			<div id="modaleWrapper" class="modaleWrapper">
+				<i class="fa-solid fa-xmark btnFermerModale"></i>
+			<h2>Galerie photo</h2>
+			<div id="modaleAffichageTravaux" class="modaleAffichageTravaux">
+
+			</div>
+			<button id="btnModaleAjout" class="btnModaleAjout">Ajouter une photo</button>
+			</div>
+			<div id="modaleWrapperAjoutPhoto" class="modaleWrapper" style="display: none;">
+				<i class="fa-solid fa-arrow-left btnRetourModale"></i>
+				<i class="fa-solid fa-xmark btnFermerModale"></i>
+			<!-- <button class="btnFermerModale"><i class="fa-solid fa-xmark" style="pointer-events: none;"></i></button> -->
+			<h2>Ajout photo</h2>
+			<form novalidate>
+			<div id="ajouterImage" class="ajouterImage">
+				<i id= "customIconAjouterImage" class="fa-regular fa-image " style="color: #b9c5cc;"></i>
+				<label for="inputAjouterImage" id="custominputAjouterImage" class="custom-inputAjouterImage">+ Ajouter photo</label>
+				<input type="file" id="inputAjouterImage" style="display: none;">
+				<label id="labelInfoImage">jpg, png : 4mo max</label>
+			</div>
+			<div id="divFormulaire">
+			<label class="labelFormulaire" for="titre">Titre</label>
+			<input name="titre" id="titre"/>
+			<label class="labelFormulaire" for="categorie">Catégorie</label>
+			<select id="categorie" name="options">
+				<option></option>
+				<!-- <option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option> -->
+			</select>
+			</div>
+			<button type="button" id="btnModaleValiderAjout" class="btnModaleValiderAjout">Valider</button>
+			</form>
+			</div>
+		</aside>
+		</section>
 	<section id="contact">
 		<h2>Contact</h2>
 		<p>Vous avez un projet ? Discutons-en !</p>
@@ -112,5 +154,7 @@
 		</ul>
 	</nav>
 </footer>
+<script src="script/scriptModale.js"></script>
+<script src="script/scriptModaleAjoutPhoto.js"></script>
 </body>
 </html>
