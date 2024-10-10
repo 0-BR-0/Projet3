@@ -40,9 +40,6 @@
 	</section>
 	<section id="portfolio">
 		<h2>Mes Projets</h2>
-		<!-- <button id="btnModifier">
-			<i id= "iconeBtnModifier" class="fa-regular fa-pen-to-square fa-sm"></i>modifier
-		</button> -->
 		<div id="filtre">
 			<button id="bouton-filtre-active" class="bouton-tous" type="button">Tous</button>
 			<button id="" class="bouton-objets" type="submit">Objets</button>
@@ -50,85 +47,36 @@
 			<button id="" class="bouton-hotels-restaurants" type="submit">Hotels & restautants</button>
 		</div>
 		<div id="gallery" class="gallery">
-			<!-- <figure>
-				<img src="assets/images/abajour-tahina.png" alt="Abajour Tahina">
-				<figcaption>Abajour Tahina</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/appartement-paris-v.png" alt="Appartement Paris V">
-				<figcaption>Appartement Paris V</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/restaurant-sushisen-londres.png" alt="Restaurant Sushisen - Londres">
-				<figcaption>Restaurant Sushisen - Londres</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/la-balisiere.png" alt="Villa “La Balisiere” - Port Louis">
-				<figcaption>Villa “La Balisiere” - Port Louis</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/structures-thermopolis.png" alt="Structures Thermopolis">
-				<figcaption>Structures Thermopolis</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/appartement-paris-x.png" alt="Appartement Paris X">
-				<figcaption>Appartement Paris X</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/le-coteau-cassis.png" alt="Pavillon “Le coteau” - Cassis">
-				<figcaption>Pavillon “Le coteau” - Cassis</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/villa-ferneze.png" alt="Villa Ferneze - Isola d’Elba">
-				<figcaption>Villa Ferneze - Isola d’Elba</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/appartement-paris-xviii.png" alt="Appartement Paris XVIII">
-				<figcaption>Appartement Paris XVIII</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/bar-lullaby-paris.png" alt="Bar “Lullaby” - Paris">
-				<figcaption>Bar “Lullaby” - Paris</figcaption>
-			</figure>
-			<figure>
-				<img src="assets/images/hotel-first-arte-new-delhi.png" alt="Hotel First Arte - New Delhi">
-				<figcaption>Hotel First Arte - New Delhi</figcaption>
-			</figure> -->
 		</div>
 		<aside id="modale" class="modale" style="display: none;">
 			<div id="modaleWrapper" class="modaleWrapper">
 				<i class="fa-solid fa-xmark btnFermerModale"></i>
-			<h2>Galerie photo</h2>
-			<div id="modaleAffichageTravaux" class="modaleAffichageTravaux">
-
-			</div>
-			<button id="btnModaleAjout" class="btnModaleAjout">Ajouter une photo</button>
+				<h2>Galerie photo</h2>
+				<div id="modaleAffichageTravaux" class="modaleAffichageTravaux">
+				</div>
+				<button id="btnModaleAjout" class="btnModaleAjout">Ajouter une photo</button>
 			</div>
 			<div id="modaleWrapperAjoutPhoto" class="modaleWrapper" style="display: none;">
 				<i class="fa-solid fa-arrow-left btnRetourModale"></i>
 				<i class="fa-solid fa-xmark btnFermerModale"></i>
-			<!-- <button class="btnFermerModale"><i class="fa-solid fa-xmark" style="pointer-events: none;"></i></button> -->
-			<h2>Ajout photo</h2>
-			<form novalidate>
-			<div id="ajouterImage" class="ajouterImage">
-				<i id= "customIconAjouterImage" class="fa-regular fa-image " style="color: #b9c5cc;"></i>
-				<label for="inputAjouterImage" id="custominputAjouterImage" class="custom-inputAjouterImage">+ Ajouter photo</label>
-				<input type="file" id="inputAjouterImage" style="display: none;">
-				<label id="labelInfoImage">jpg, png : 4mo max</label>
-			</div>
-			<div id="divFormulaire">
-			<label class="labelFormulaire" for="titre">Titre</label>
-			<input name="titre" id="titre"/>
-			<label class="labelFormulaire" for="categorie">Catégorie</label>
-			<select id="categorie" name="options">
-				<option></option>
-				<!-- <option value="option1">Option 1</option>
-				<option value="option2">Option 2</option>
-				<option value="option3">Option 3</option> -->
-			</select>
-			</div>
-			<button type="button" id="btnModaleValiderAjout" class="btnModaleValiderAjout">Valider</button>
-			</form>
+				<h2>Ajout photo</h2>
+				<form id="idForm" novalidate>
+					<div id="ajouterImage" class="ajouterImage">
+						<i id= "customIconAjouterImage" class="fa-regular fa-image " style="color: #b9c5cc;"></i>
+						<label for="inputAjouterImage" id="custominputAjouterImage" class="custom-inputAjouterImage">+ Ajouter photo</label>
+						<input type="file" id="inputAjouterImage" style="display: none;">
+						<label id="labelInfoImage">jpg, png : 4mo max</label>
+					</div>
+					<div id="divFormulaire">
+						<label class="labelFormulaire" for="titre">Titre</label>
+						<input name="titre" id="titre"/>
+						<label class="labelFormulaire" for="categorie">Catégorie</label>
+						<select id="categorie" name="options">
+							<option></option>
+						</select>
+					</div>
+					<div id="btnModaleValiderAjout" class="btnModaleValiderAjout">Valider</div>
+				</form>
 			</div>
 		</aside>
 		</section>
@@ -146,7 +94,6 @@
 		</form>
 	</section>
 </main>
-
 <footer>
 	<nav>
 		<ul>

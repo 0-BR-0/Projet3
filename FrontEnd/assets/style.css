@@ -295,33 +295,7 @@ footer nav ul {
 
 /* Version Utilisateur online */
 
-/* #btnModifier {
-	display: none;
-}
 
-.modale {
-	display: none;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.8);
-
-}
-
-.modaleWrapper {
-	box-sizing: border-box;
-	overflow: auto;
-	width: 600px;
-	height: 400px;
-	max-width: calc(100vw - 20px);
-	max-height: calc(100vh - 20px);
-	background-color: white;
-
-} */
 
 #divPortFolio {
 	display: flex;
@@ -346,11 +320,7 @@ footer nav ul {
 	margin-right: 5px;
 }
 
-/* #portfolio h2, button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} */
+
 
 
 /* CSS Modale1 */
@@ -468,27 +438,7 @@ figure h2 {
 
 
 
-/* #modaleWrapperAjoutPhoto {
-	box-sizing: border-box;
-	overflow: auto;
-    padding: 40px;
-	width: 50%;
-	height: 688px;
-	max-width: calc(100vw - 20px);
-	max-height: calc(100vh - 20px);
-	background-color: white;
-	margin: auto;
 
-
-    position: relative; Nécessaire pour le positionnement absolu du bouton Fermer
-    display: flex;
-    flex-direction: column;
-    align-items: center; Centrer horizontalement le contenu
-	gap: 40px;
-	border-radius: 10px;
-
-
-} */
 
 .btnRetourModale {
     position: absolute;
@@ -506,7 +456,6 @@ figure h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 2em 0 1em 0; */
 	color: black;
 	gap: 20px;
 }
@@ -526,7 +475,6 @@ figure h2 {
 }
 
 .labelFormulaire {
-	/* margin: 2em 0 1em 0; */
 	text-align: left;
 	width: 100%;
 }
