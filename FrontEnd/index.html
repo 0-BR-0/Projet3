@@ -42,9 +42,6 @@
 		<h2>Mes Projets</h2>
 		<div id="filtre">
 			<button id="bouton-filtre-active" class="bouton-tous" type="button">Tous</button>
-			<button id="" class="bouton-objets" type="submit">Objets</button>
-			<button id="" class="bouton-appartements" type="submit">Appartements</button>
-			<button id="" class="bouton-hotels-restaurants" type="submit">Hotels & restautants</button>
 		</div>
 		<div id="gallery" class="gallery">
 		</div>
@@ -60,13 +57,24 @@
 				<i class="fa-solid fa-arrow-left btnRetourModale"></i>
 				<i class="fa-solid fa-xmark btnFermerModale"></i>
 				<h2>Ajout photo</h2>
-				<form id="idForm" novalidate>
-					<div id="ajouterImage" class="ajouterImage">
-						<i id= "customIconAjouterImage" class="fa-regular fa-image " style="color: #b9c5cc;"></i>
-						<label for="inputAjouterImage" id="custominputAjouterImage" class="custom-inputAjouterImage">+ Ajouter photo</label>
+				<form id="idForm">
+					<section id="ajouterImage" class="ajouterImage">
+						<div id="divAjouterImage">
+							<i id= "customIconAjouterImage" class="fa-regular fa-image " style="color: #b9c5cc;"></i>
+							<button id="custominputAjouterImage" class="custom-inputAjouterImage"> + Ajouter photo</button>
+							<label id="labelInfoImage">jpg, png : 4mo max</label>
+						</div>
 						<input type="file" id="inputAjouterImage" style="display: none;">
-						<label id="labelInfoImage">jpg, png : 4mo max</label>
-					</div>
+					</section>
+					
+					<!-- <section id="ajouterImage" class="ajouterImage">
+						<div id="divAjouterImage">
+							<i id= "customIconAjouterImage" class="fa-regular fa-image " style="color: #b9c5cc;"></i>
+							<label for="inputAjouterImage" id="custominputAjouterImage" class="custom-inputAjouterImage">+ Ajouter photo</label>
+							<label id="labelInfoImage">jpg, png : 4mo max</label>
+						</div>
+						<input type="file" id="inputAjouterImage" style="display: none;">
+					</section> -->
 					<div id="divFormulaire">
 						<label class="labelFormulaire" for="titre">Titre</label>
 						<input name="titre" id="titre"/>
@@ -75,11 +83,11 @@
 							<option></option>
 						</select>
 					</div>
-					<div id="btnModaleValiderAjout" class="btnModaleValiderAjout">Valider</div>
+					<button type="button" id="btnModaleValiderAjout" class="btnModaleValiderAjout">Valider</button>
 				</form>
 			</div>
 		</aside>
-		</section>
+	</section>
 	<section id="contact">
 		<h2>Contact</h2>
 		<p>Vous avez un projet ? Discutons-en !</p>
