@@ -1,4 +1,5 @@
 const btnFermerModale = document.querySelectorAll('.btnFermerModale');
+const btnModaleAjout = document.getElementById('btnModaleAjout');
 
 // Fonction pour fermer la modale lorsqu'on clique en dehors ou sur le bouton de fermeture
 const fermerModale = () => {
@@ -8,7 +9,7 @@ const fermerModale = () => {
 			modale.style.display = 'none';
 			modaleWrapperAjoutPhoto.style.display = 'none';
 		}
-	})
+	});
 }
 
 // Fonction pour récupérer les données des travaux à afficher dans la modale
@@ -31,7 +32,6 @@ const displayDataModal = (paramWorks) => {
 		imgHTML.alt = element.title;
 		figureHTML.appendChild(imgHTML);     
 		galleryHTML.appendChild(figureHTML);
-
 		const btnSupprimerIMG = document.createElement('span');
 		btnSupprimerIMG.id = element.id;
 		btnSupprimerIMG.classList = 'btnSupprimerIMG';
@@ -42,8 +42,8 @@ const displayDataModal = (paramWorks) => {
 			await deleteImage(element.id);
 			await fetchDataModal();
 			await fetchData();
-		})
-	})
+		});
+	});
 }
 
 // Fonction pour supprimer une image via l'API
@@ -54,10 +54,8 @@ const deleteImage = async (id) =>  {
 		headers: {
 			'Authorization': `Bearer ${verifToken}`,
 		}
-	})
+	});
 }
-
-const btnModaleAjout = document.getElementById('btnModaleAjout')
 
 // Fonction pour ouvrir la modale d'ajout de photo
 function ouvrirModaleAjoutPhoto() {
