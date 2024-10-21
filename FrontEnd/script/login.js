@@ -32,7 +32,7 @@ async function envoyerIdentifiants(payload) {
             window.location.replace('index.html')
         })
     } else {
-        const errorHTML = document.getElementById('error')
+        const errorHTML = document.getElementById('errorLogin')
         errorHTML.innerHTML = 'E-mail ou mot de passe incorrect' //Erreur dans l’identifiant ou le mot de passe
     }
 }
